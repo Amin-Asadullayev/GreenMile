@@ -9,14 +9,14 @@
 }
 
 ::selection {
-  background: #c5e4af;
-  color: #104e10;
+  background: #99f6e4;
+  color: #134e4a;
 }
 
 ::-webkit-scrollbar        { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track  { background: transparent; }
-::-webkit-scrollbar-thumb  { background: #c2d9c0; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #9dcf7d; }
+::-webkit-scrollbar-thumb  { background: #94a3b8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }
 
 @layer base {
   body {
@@ -54,7 +54,7 @@ input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
-  background: #c5e4af;
+  background: #99f6e4;
   border-radius: 2px;
   outline: none;
 }
@@ -63,8 +63,22 @@ input[type="range"]::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #2d9e2d;
+  background: #0d9488;
   cursor: pointer;
   border: 2px solid white;
   box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+
+/* Hide scrollbar for horizontal scroll filters on mobile */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* iOS safe area for bottom nav */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }

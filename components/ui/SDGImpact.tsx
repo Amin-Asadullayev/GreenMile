@@ -4,14 +4,14 @@ import { Target } from "lucide-react";
 export function SDGImpactSection() {
   return (
     <div
-      className="bg-white rounded-2xl border border-moss-100 p-5 animate-fade-up opacity-0"
+      className="bg-white rounded-2xl border border-slate-100 p-5 animate-fade-up opacity-0"
       style={{ animationDelay: "350ms", animationFillMode: "forwards" }}
     >
       <div className="flex items-center gap-2 mb-5">
-        <Target className="w-4 h-4 text-moss-400" strokeWidth={1.75} />
+        <Target className="w-4 h-4 text-slate-400" strokeWidth={1.75} />
         <div>
-          <h3 className="font-semibold text-forest-900 text-sm leading-none">SDG Impact</h3>
-          <p className="text-xs text-moss-400 mt-0.5">Your contribution to global goals</p>
+          <h3 className="font-semibold text-slate-900 text-sm leading-none">SDG Impact</h3>
+          <p className="text-xs text-slate-400 mt-0.5">Your contribution to global goals</p>
         </div>
       </div>
 
@@ -26,11 +26,11 @@ export function SDGImpactSection() {
                 >
                   {sdg.goal}
                 </span>
-                <span className="text-xs font-semibold text-forest-800 leading-tight">{sdg.title}</span>
+                <span className="text-xs font-semibold text-teal-800 leading-tight">{sdg.title}</span>
               </div>
-              <span className="text-xs font-semibold text-moss-500 font-mono tabular-nums ml-2 shrink-0">{sdg.progress}%</span>
+              <span className="text-xs font-semibold text-slate-500 font-mono tabular-nums ml-2 shrink-0">{sdg.progress}%</span>
             </div>
-            <div className="h-1 bg-moss-100 rounded-full overflow-hidden ml-9">
+            <div className="h-1 bg-slate-100 rounded-full overflow-hidden ml-9">
               <div
                 className="h-full rounded-full transition-all duration-1000"
                 style={{ width: `${sdg.progress}%`, background: sdg.color }}

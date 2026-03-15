@@ -74,23 +74,23 @@ export interface SDGImpact {
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 export const VEHICLE_CONFIG: Record<VehicleType, { label: string; iconName: string; xpPerKm: number; co2PerKm: number; color: string }> = {
-  walk:    { label: "Walking",  iconName: "Footprints",  xpPerKm: 30,  co2PerKm: 0.0,  color: "#4cbb4c" },
-  bike:    { label: "Cycling",  iconName: "Bike",        xpPerKm: 25,  co2PerKm: 0.0,  color: "#2d9e2d" },
-  ebike:   { label: "E-Bike",   iconName: "Zap",         xpPerKm: 20,  co2PerKm: 0.02, color: "#73b84e" },
-  scooter: { label: "Scooter",  iconName: "Podcast",     xpPerKm: 18,  co2PerKm: 0.05, color: "#9dcf7d" },
-  metro:   { label: "Metro",    iconName: "TrainFront",  xpPerKm: 15,  co2PerKm: 0.04, color: "#539c32" },
-  bus:     { label: "Bus",      iconName: "Bus",         xpPerKm: 12,  co2PerKm: 0.06, color: "#3e7c23" },
-  carpool: { label: "Carpool",  iconName: "Users",       xpPerKm: 8,   co2PerKm: 0.08, color: "#ae874e" },
+  walk:    { label: "Walking",  iconName: "Footprints",  xpPerKm: 30,  co2PerKm: 0.0,  color: "#0d9488" },
+  bike:    { label: "Cycling",  iconName: "Bike",        xpPerKm: 25,  co2PerKm: 0.0,  color: "#0f766e" },
+  ebike:   { label: "E-Bike",   iconName: "Zap",         xpPerKm: 20,  co2PerKm: 0.02, color: "#14b8a6" },
+  scooter: { label: "Scooter",  iconName: "Podcast",     xpPerKm: 18,  co2PerKm: 0.05, color: "#2dd4bf" },
+  metro:   { label: "Metro",    iconName: "TrainFront",  xpPerKm: 15,  co2PerKm: 0.04, color: "#10b981" },
+  bus:     { label: "Bus",      iconName: "Bus",         xpPerKm: 12,  co2PerKm: 0.06, color: "#059669" },
+  carpool: { label: "Carpool",  iconName: "Users",       xpPerKm: 8,   co2PerKm: 0.08, color: "#78716c" },
 };
 
 export const TIER_CONFIG: Record<RankTier, { label: string; minLevel: number; color: string; bg: string }> = {
-  "seedling":           { label: "Seedling",           minLevel: 1,  color: "#84d684", bg: "#f0faf0" },
-  "sprout":             { label: "Sprout",              minLevel: 3,  color: "#4cbb4c", bg: "#dcf5dc" },
-  "sapling":            { label: "Sapling",             minLevel: 5,  color: "#2d9e2d", bg: "#b8eab8" },
-  "eco-rider":          { label: "Eco Rider",           minLevel: 8,  color: "#1f7f1f", bg: "#84d684" },
-  "green-commuter":     { label: "Green Commuter",      minLevel: 12, color: "#166316", bg: "#4cbb4c" },
-  "eco-champion":       { label: "Eco Champion",        minLevel: 17, color: "#104e10", bg: "#2d9e2d" },
-  "sustainability-hero":{ label: "Sustainability Hero", minLevel: 25, color: "#061f06", bg: "#1f7f1f" },
+  "seedling":           { label: "Seedling",           minLevel: 1,  color: "#0f766e", bg: "#f0fdfa" },
+  "sprout":             { label: "Sprout",              minLevel: 3,  color: "#0d9488", bg: "#ccfbf1" },
+  "sapling":            { label: "Sapling",             minLevel: 5,  color: "#0d9488", bg: "#99f6e4" },
+  "eco-rider":          { label: "Eco Rider",           minLevel: 8,  color: "#0f766e", bg: "#5eead4" },
+  "green-commuter":     { label: "Green Commuter",      minLevel: 12, color: "#115e59", bg: "#2dd4bf" },
+  "eco-champion":       { label: "Eco Champion",        minLevel: 17, color: "#134e4a", bg: "#14b8a6" },
+  "sustainability-hero":{ label: "Sustainability Hero", minLevel: 25, color: "#042f2e", bg: "#0d9488" },
 };
 
 export const LEVEL_XP_TABLE = [0, 200, 450, 750, 1100, 1500, 1950, 2450, 3000, 3600, 4250, 4950, 5700, 6500, 7350, 8250, 9200, 10200, 11250, 12350];
@@ -99,7 +99,7 @@ export const LEVEL_XP_TABLE = [0, 200, 450, 750, 1100, 1500, 1950, 2450, 3000, 3
 
 export const CURRENT_USER: User = {
   id: "u1",
-  name: "Dashdemir Zeynalli",
+  name: "Dashdamir Zeynalli",
   initials: "AM",
   department: "Engineering",
   level: 7,
@@ -160,10 +160,10 @@ export const LEADERBOARD: LeaderboardEntry[] = [
 ];
 
 export const SDG_IMPACTS: SDGImpact[] = [
-  { goal: 3,  title: "Good Health & Wellbeing",   description: "Active commutes reduce sedentary time and improve cardiovascular health",     progress: 68, color: "#4CAF50" },
-  { goal: 11, title: "Sustainable Cities",        description: "Fewer cars on the road reduces congestion and urban air pollution",             progress: 74, color: "#FF9800" },
-  { goal: 13, title: "Climate Action",            description: "Every eco-trip avoids carbon emissions that cause climate change",             progress: 82, color: "#2196F3" },
-  { goal: 17, title: "Partnerships for Goals",    description: "Company-wide participation builds collective sustainability culture",           progress: 55, color: "#9C27B0" },
+  { goal: 3,  title: "Good Health & Wellbeing",   description: "Active commutes reduce sedentary time and improve cardiovascular health",   progress: 68, color: "#0d9488" },
+  { goal: 11, title: "Sustainable Cities",        description: "Fewer cars on the road reduces congestion and urban air pollution",           progress: 74, color: "#0891b2" },
+  { goal: 13, title: "Climate Action",            description: "Every eco-trip avoids carbon emissions that cause climate change",           progress: 82, color: "#0f766e" },
+  { goal: 17, title: "Partnerships for Goals",    description: "Company-wide participation builds collective sustainability culture",         progress: 55, color: "#6366f1" },
 ];
 
 export const ADMIN_STATS = {

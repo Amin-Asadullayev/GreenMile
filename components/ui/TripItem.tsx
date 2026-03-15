@@ -14,7 +14,7 @@ export function TripItem({ trip, index = 0 }: TripItemProps) {
 
   return (
     <div
-      className="flex items-center gap-4 px-4 py-3.5 bg-white rounded-xl border border-moss-100 hover:border-moss-200 transition-all animate-fade-up opacity-0"
+      className="flex items-center gap-4 px-4 py-3.5 bg-white rounded-xl border border-slate-100 hover:border-slate-200 transition-all animate-fade-up opacity-0"
       style={{ animationDelay: `${index * 60}ms`, animationFillMode: "forwards" }}
     >
       <div
@@ -25,19 +25,19 @@ export function TripItem({ trip, index = 0 }: TripItemProps) {
       </div>
 
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-1.5 text-sm font-medium text-forest-900">
+        <div className="flex items-center gap-1.5 text-sm font-medium text-slate-900">
           <span>{trip.from}</span>
-          <ArrowRight className="w-3 h-3 text-moss-400 shrink-0" />
+          <ArrowRight className="w-3 h-3 text-slate-400 shrink-0" />
           <span>{trip.to}</span>
         </div>
-        <p className="text-xs text-moss-400 mt-0.5">
+        <p className="text-xs text-slate-400 mt-0.5">
           {vehicle.label} · {trip.distanceKm} km · {trip.durationMin} min · {formatDate(trip.date)}
         </p>
       </div>
 
       <div className="text-right shrink-0">
-        <p className="text-sm font-semibold text-forest-600 font-mono tabular-nums">+{trip.xpEarned} XP</p>
-        <p className="text-xs text-moss-400 font-mono tabular-nums mt-0.5">−{trip.co2SavedKg} kg CO₂</p>
+        <p className="text-sm font-semibold text-teal-600 font-mono tabular-nums">+{trip.xpEarned} XP</p>
+        <p className="text-xs text-slate-400 font-mono tabular-nums mt-0.5">−{trip.co2SavedKg} kg CO₂</p>
       </div>
     </div>
   );
