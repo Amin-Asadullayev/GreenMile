@@ -136,7 +136,7 @@ export const WEEKLY_DATA: WeeklyData[] = [
 ];
 
 export const PERKS: Perk[] = [
-  { id: "p1", name: "Gift Card 10 ₼",     description: "Redeem a 10 ₼ gift card from our partner stores", iconName: "CreditCard",    category: "financial", requiredLevel: 5,  requiredXp: 1500,  value: "10 ₼" },
+  { id: "p1", name: "Gift Card 10",     description: "Redeem a 10 gift card from our partner stores", iconName: "CreditCard",    category: "financial", requiredLevel: 5,  requiredXp: 1500,  value: "10" },
   { id: "p2", name: "Extra Holiday Day", description: "Add one paid vacation day to your annual leave",   iconName: "CalendarPlus",  category: "time-off",  requiredLevel: 8,  requiredXp: 3000,  value: "+1 day" },
   { id: "p3", name: "Gym Membership",    description: "3-month gym or wellness club membership",          iconName: "Dumbbell",      category: "wellness",  requiredLevel: 10, requiredXp: 4250,  value: "3 months" },
   { id: "p4", name: "Remote Days +2",    description: "Two extra remote work days per month",             iconName: "Laptop",        category: "remote",    requiredLevel: 12, requiredXp: 4950,  value: "+2/month" },

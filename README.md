@@ -104,7 +104,7 @@ Then open [http://localhost:3000](http://localhost:3000)
 ### Perk Unlock Levels
 | Perk               | Level | Value        |
 |--------------------|-------|--------------|
-| Gift Card 10 ₼      | 5     | 10 ₼          |
+| Gift Card 10      | 5     | 10          |
 | Extra Holiday      | 8     | +1 day       |
 | Gym Membership     | 10    | 3 months     |
 | Remote Days +2     | 12    | +2/month     |
